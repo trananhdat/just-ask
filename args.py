@@ -230,6 +230,7 @@ def get_args():
             )
         elif args.dataset == "howtovqa":
             if not args.subset:
+                load_path = "/kaggle/input/how2vqa/HowToVQA"
                 args.caption_path = os.path.join(load_path, "howtovqa.pkl")
                 args.train_csv_path = os.path.join(load_path, "train_howtovqa.csv")
                 args.val_csv_path = os.path.join(load_path, "val_howtovqa.csv")
